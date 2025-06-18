@@ -15,7 +15,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Rithik-gokul/Hotel-Booking-Demo",
       liveUrl: "https://rithik-gokul.github.io/Hotel-Booking-Demo/",
       date: "2023",
-      category: "Frontend",
+      category: "frontend",
       featured: true,
       highlights: ["Responsive", "Smooth", "Modern"] 
     },
