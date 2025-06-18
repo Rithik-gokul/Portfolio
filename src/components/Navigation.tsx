@@ -95,7 +95,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 p-3 sm:p-4 shadow-lg">
+          <div className="md:hidden bg-white/95 backdrop-blur-md rounded-lg mt-2 mb-4 p-1 shadow-lg">
             {navItems.map((item) => (
               <button
                 key={item.id}
