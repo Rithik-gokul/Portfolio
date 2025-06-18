@@ -52,6 +52,15 @@
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+
+  /* Hide scrollbar for horizontal scroll sections */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
 }
 
 @keyframes fadeIn {

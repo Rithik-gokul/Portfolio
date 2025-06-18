@@ -49,20 +49,16 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14 sm:h-16">
-          {/* Logo */}
+          {/* Logo - Hide name on mobile and tablet */}
           <div className="flex items-center">
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm sm:text-lg">GR</span>
             </div>
-            <span className={`ml-2 sm:ml-3 text-base sm:text-xl font-bold transition-colors duration-300 hidden sm:block ${
+            {/* Only show name on large screens (desktop) */}
+            <span className={`ml-3 text-xl font-bold transition-colors duration-300 hidden lg:block ${
               isScrolled ? 'text-slate-900' : 'text-white'
             }`}>
               Gokul Rithik N V N
-            </span>
-            <span className={`ml-2 text-sm font-bold transition-colors duration-300 sm:hidden ${
-              isScrolled ? 'text-slate-900' : 'text-white'
-            }`}>
-              Gokul Rithik
             </span>
           </div>
 

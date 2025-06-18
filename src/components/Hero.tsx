@@ -22,7 +22,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center relative overflow-hidden pt-16 sm:pt-20">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-32 h-32 md:w-72 md:h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -42,10 +42,11 @@ const Hero = () => {
           {/* Enhanced Main Content */}
           <div className="space-y-4 sm:space-y-6">
             <div className="animate-slide-up">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-2 sm:mb-4 tracking-tight leading-tight">
+              {/* Responsive name sizing - smaller on mobile to prevent overlap */}
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-white mb-2 sm:mb-4 tracking-tight leading-tight">
                 Gokul Rithik N V N
               </h1>
-              <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-4 lg:space-x-6 text-blue-300 text-sm sm:text-base mb-4 sm:mb-6">
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-4 lg:space-x-6 text-blue-300 text-xs sm:text-sm md:text-base mb-4 sm:mb-6">
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
                   <span>Nellore, AP</span>
@@ -57,11 +58,11 @@ const Hero = () => {
               </div>
             </div>
 
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-4 sm:mb-6 animate-slide-up animation-delay-200 font-semibold">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-4 sm:mb-6 animate-slide-up animation-delay-200 font-semibold">
               Full Stack Developer
             </h2>
 
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up animation-delay-400 px-4">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up animation-delay-400 px-4">
               Crafting exceptional digital experiences through
               <span className="text-blue-300 font-semibold"> clean code</span>,
               <span className="text-purple-300 font-semibold">
@@ -76,21 +77,21 @@ const Hero = () => {
             </p>
 
             {/* Compact Stats for Mobile */}
-            <div className="grid grid-cols-3 gap-3 sm:gap-6 max-w-xs sm:max-w-lg mx-auto mb-6 sm:mb-8 animate-slide-up animation-delay-600">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 max-w-xs sm:max-w-lg mx-auto mb-6 sm:mb-8 animate-slide-up animation-delay-600">
               <div className="text-center">
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
                   5+
                 </div>
                 <div className="text-blue-300 text-xs">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
                   100%
                 </div>
                 <div className="text-purple-300 text-xs">Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
                   1+
                 </div>
                 <div className="text-pink-300 text-xs">Years</div>
