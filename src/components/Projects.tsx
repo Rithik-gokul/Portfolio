@@ -8,69 +8,17 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A comprehensive full-stack e-commerce solution with advanced features including user authentication, payment processing, inventory management, and real-time analytics dashboard.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis", "Docker"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      date: "2024",
-      category: "fullstack",
-      featured: true,
-      highlights: ["100k+ users", "99.9% uptime", "50% faster loading"]
-    },
-    {
-      id: 2,
-      title: "AI-Powered Task Management",
-      description: "Intelligent task management application with AI-driven prioritization, natural language processing for task creation, and team collaboration features with real-time updates.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React", "Python", "FastAPI", "OpenAI", "Firebase", "TensorFlow"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      date: "2024",
-      category: "ai",
-      featured: true,
-      highlights: ["AI-powered insights", "Real-time collaboration", "Smart automation"]
-    },
-    {
-      id: 3,
-      title: "Real-Time Analytics Dashboard",
-      description: "Advanced analytics dashboard with real-time data visualization, customizable widgets, and automated reporting for business intelligence.",
-      image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Next.js", "D3.js", "MongoDB", "Socket.io", "Chart.js"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      date: "2024",
-      category: "frontend",
-      featured: false,
-      highlights: ["Real-time updates", "Interactive charts", "Custom widgets"]
-    },
-    {
-      id: 4,
-      title: "Microservices Architecture",
-      description: "Scalable microservices architecture with containerization, API gateway, service mesh, and comprehensive monitoring and logging.",
-      image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Node.js", "Docker", "Kubernetes", "MongoDB", "Redis", "Nginx"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      title: "Hotel Booking Demo",
+      description: "UI for a basic hotel booking app with filter and data fetched by using API made using React",
+      image: "project_booking.png",
+      tech: ["React", "javascript", "MUI"],
+      githubUrl: "https://github.com/Rithik-gokul/Hotel-Booking-Demo",
+      liveUrl: "https://rithik-gokul.github.io/Hotel-Booking-Demo/",
       date: "2023",
-      category: "backend",
-      featured: false,
-      highlights: ["Highly scalable", "Auto-scaling", "99.9% uptime"]
+      category: "Front End",
+      featured: true,
+      highlights: ["Responsive", "Smooth", "Modern"] 
     },
-    {
-      id: 5,
-      title: "Mobile-First PWA",
-      description: "Progressive Web Application with offline functionality, push notifications, and native-like performance across all devices.",
-      image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React", "Service Workers", "IndexedDB", "Workbox"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      date: "2023",
-      category: "mobile",
-      featured: false,
-      highlights: ["Offline support", "Push notifications", "Native experience"]
-    }
   ];
 
   const categories = [
