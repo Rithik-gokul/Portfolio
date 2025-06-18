@@ -57,7 +57,7 @@ const Contact = () => {
       });
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Failed to send message. Please try again or contact me directly at Gokul.rithik@example.com');
+      alert('Failed to send message. Please try again or contact me directly at rithikgokul200@gmail.com');
     } finally {
       setIsSubmitting(false);
     }
@@ -72,31 +72,31 @@ const Contact = () => {
 
   if (isSubmitted) {
     return (
-      <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
-        <div className="container mx-auto px-6">
+      <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-12 shadow-2xl border border-white/20">
-              <div className="w-20 h-20 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-10 h-10 text-white" />
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-2xl border border-white/20">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <CheckCircle className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
-              <h2 className="text-4xl font-bold text-white mb-4">Message Sent Successfully!</h2>
-              <p className="text-gray-300 mb-8 text-lg">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">Message Sent Successfully!</h2>
+              <p className="text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg">
                 Thank you for reaching out! I've received your message and will get back to you within 24 hours. 
                 I'm excited to learn more about your project.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2"
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
                 >
-                  <Send className="w-5 h-5" />
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Send Another Message</span>
                 </button>
                 <a
-                  href="mailto:Gokul.rithik@example.com"
-                  className="px-8 py-3 bg-white/10 border border-white/30 text-white rounded-xl font-semibold hover:bg-white/20 transition-colors duration-300 flex items-center justify-center space-x-2"
+                  href="mailto:rithikgokul200@gmail.com"
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 bg-white/10 border border-white/30 text-white rounded-xl font-semibold hover:bg-white/20 transition-colors duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
                 >
-                  <Mail className="w-5 h-5" />
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Direct Email</span>
                 </a>
               </div>
@@ -108,86 +108,86 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 relative overflow-hidden">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 sm:w-72 sm:h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 sm:w-72 sm:h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Enhanced Section Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
-              <Mail className="w-4 h-4" />
+          <div className="text-center mb-12 sm:mb-16">
+            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4">
+              <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Let's Work Together</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
               Start Your
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"> Project</span>
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-8 rounded-full"></div>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6 sm:mb-8 rounded-full"></div>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
               Ready to bring your vision to life? Let's discuss your project requirements, 
               timeline, and how we can work together to create something amazing.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             {/* Enhanced Contact Info */}
-            <div className="space-y-8">
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
-                <h3 className="text-3xl font-bold text-white mb-6">Get In Touch</h3>
-                <p className="text-gray-300 mb-8 leading-relaxed text-lg">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/20">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Get In Touch</h3>
+                <p className="text-gray-300 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base lg:text-lg">
                   I'm always excited to hear about new projects and opportunities. 
                   Whether you're a startup looking to build your MVP or an established 
                   company needing to scale your digital presence, I'd love to help.
                 </p>
                 
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4 group">
-                    <div className="p-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <Mail className="w-6 h-6 text-white" />
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="flex items-center space-x-3 sm:space-x-4 group">
+                    <div className="p-3 sm:p-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-lg">Email</p>
-                      <a href="mailto:Gokul.rithik@example.com" className="text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                      <p className="text-white font-semibold text-base sm:text-lg">Email</p>
+                      <a href="mailto:rithikgokul200@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm sm:text-base">
                         rithikgokul200@gmail.com
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-4 group">
-                    <div className="p-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <Phone className="w-6 h-6 text-white" />
+                  <div className="flex items-center space-x-3 sm:space-x-4 group">
+                    <div className="p-3 sm:p-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-lg">Phone</p>
-                      <a href="tel:+15551234567" className="text-gray-300 hover:text-green-400 transition-colors duration-300">
+                      <p className="text-white font-semibold text-base sm:text-lg">Phone</p>
+                      <a href="tel:+917702383266" className="text-gray-300 hover:text-green-400 transition-colors duration-300 text-sm sm:text-base">
                         +91 7702383266
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-center space-x-4 group">
-                    <div className="p-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <MapPin className="w-6 h-6 text-white" />
+                  <div className="flex items-center space-x-3 sm:space-x-4 group">
+                    <div className="p-3 sm:p-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold text-lg">Location</p>
-                      <p className="text-gray-300">Nellore, AP</p>
+                      <p className="text-white font-semibold text-base sm:text-lg">Location</p>
+                      <p className="text-gray-300 text-sm sm:text-base">Nellore, AP</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Response Time */}
-                <div className="mt-8 p-6 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl border border-blue-500/20">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Clock className="w-5 h-5 text-blue-400" />
-                    <span className="text-white font-semibold">Response Time</span>
+                <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl sm:rounded-2xl border border-blue-500/20">
+                  <div className="flex items-center space-x-2 sm:space-x-3 mb-2 sm:mb-3">
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
+                    <span className="text-white font-semibold text-sm sm:text-base">Response Time</span>
                   </div>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300 text-sm sm:text-base">
                     I typically respond to new inquiries within 24 hours. For urgent projects, 
                     feel free to call me directly.
                   </p>
@@ -196,17 +196,17 @@ const Contact = () => {
             </div>
 
             {/* Enhanced Contact Form */}
-            <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-white/20">
-              <h3 className="text-3xl font-bold text-white mb-6">Project Details</h3>
+            <div className="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-2xl border border-white/20">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Project Details</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                       Full Name *
                     </label>
                     <div className="relative">
-                      <User className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                      <User className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
                       <input
                         type="text"
                         id="name"
@@ -214,7 +214,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                        className="w-full pl-10 pr-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                         placeholder="Your Name"
                       />
                     </div>
@@ -225,7 +225,7 @@ const Contact = () => {
                       Email Address *
                     </label>
                     <div className="relative">
-                      <Mail className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                      <Mail className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
                       <input
                         type="email"
                         id="email"
@@ -233,27 +233,27 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                        className="w-full pl-10 pr-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                         placeholder="your.email@example.com"
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
                       Company/Organization
                     </label>
                     <div className="relative">
-                      <Building className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                      <Building className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
                       <input
                         type="text"
                         id="company"
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                        className="w-full pl-10 pr-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                         placeholder="Your Company"
                       />
                     </div>
@@ -269,13 +269,13 @@ const Contact = () => {
                       name="position"
                       value={formData.position}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                       placeholder="e.g., CTO, Product Manager"
                     />
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label htmlFor="projectType" className="block text-sm font-medium text-gray-300 mb-2">
                       Project Type
@@ -285,7 +285,7 @@ const Contact = () => {
                       name="projectType"
                       value={formData.projectType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     >
                       <option value="" className="text-gray-800">Select Project Type</option>
                       <option value="web-app" className="text-gray-800">Web Application</option>
@@ -306,7 +306,7 @@ const Contact = () => {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     >
                       <option value="" className="text-gray-800">Select Budget Range</option>
                       <option value="1k-5k" className="text-gray-800">$1,000 - $5,000</option>
@@ -324,13 +324,13 @@ const Contact = () => {
                     Project Timeline
                   </label>
                   <div className="relative">
-                    <Calendar className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <Calendar className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
                     <select
                       id="timeline"
                       name="timeline"
                       value={formData.timeline}
                       onChange={handleChange}
-                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                      className="w-full pl-10 pr-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                     >
                       <option value="" className="text-gray-800">Select Timeline</option>
                       <option value="asap" className="text-gray-800">ASAP</option>
@@ -347,15 +347,15 @@ const Contact = () => {
                     Project Description *
                   </label>
                   <div className="relative">
-                    <MessageSquare className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <MessageSquare className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
                     <textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      rows={5}
-                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
+                      rows={4}
+                      className="w-full pl-10 pr-4 py-2.5 sm:py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none text-sm sm:text-base"
                       placeholder="Tell me about your project, goals, and any specific requirements..."
                     ></textarea>
                   </div>
@@ -364,17 +364,17 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="group w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 shadow-lg hover:shadow-blue-500/25"
+                  className="group w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 sm:py-4 px-6 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 shadow-lg hover:shadow-blue-500/25 text-sm sm:text-base"
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                      <div className="animate-spin rounded-full h-4 w-4 sm:h-5 sm:w-5 border-b-2 border-white"></div>
                       <span>Sending Your Message...</span>
                     </>
                   ) : (
                     <>
                       <span>Send Project Details</span>
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                     </>
                   )}
                 </button>
