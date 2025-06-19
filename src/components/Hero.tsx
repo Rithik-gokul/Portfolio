@@ -43,7 +43,7 @@ const Hero = () => {
           <div className="space-y-4 sm:space-y-6">
             <div className="animate-slide-up">
               {/* Responsive name sizing - smaller on mobile to prevent overlap */}
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-white mb-2 sm:mb-4 tracking-tight leading-tight">
+              <h1 className="text-4xl sm:text-4xl md:text-7xl lg:text-6xl xl:text-7xl font-bold text-white mb-2 sm:mb-4 tracking-tight leading-tight">
                 Gokul Rithik N V N
               </h1>
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-4 lg:space-x-6 text-blue-300 text-xs sm:text-sm md:text-base mb-4 sm:mb-6">
@@ -51,10 +51,10 @@ const Hero = () => {
                   <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
                   <span>Nellore, AP</span>
                 </div>
-                <div className="flex items-center space-x-2">
+                {/* <div className="flex items-center space-x-2">
                   <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                   <span>1+ Years Experience</span>
-                </div>
+                </div> */}
               </div>
             </div>
 
