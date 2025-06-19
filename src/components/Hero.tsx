@@ -16,7 +16,7 @@ const Hero = () => {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Gokul%20Rithik%20Resume.pdf";
+    link.href = "Gokul%20Rithik%20Resume.pdf";
     link.download = "Gokul Rithik Resume.pdf";
     link.click();
   };
