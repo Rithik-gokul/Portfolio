@@ -29,7 +29,7 @@ const Projects = () => {
       liveUrl: "https://rithik-gokul.github.io/Hotel-Booking-Demo/",
       date: "2023",
       category: "frontend",
-      featured: true,
+      featured: false,
       highlights: ["Responsive", "Smooth", "Modern"] 
     },
   ];
