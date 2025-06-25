@@ -8,6 +8,19 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Feedback Dashboard",
+      description: "UI for a basic hotel booking app with filter and data fetched by using API made using React",
+      image: "project_booking.png",
+      tech: ["React", "javascript", "MUI", "Python", "Flask", "MongoDB", "Render"],
+      githubUrl: "https://github.com/Rithik-gokul/feedback",
+      liveUrl: "https://feedback-dashboard-71id.onrender.com/",
+      date: "2025",
+      category: "fullstack",
+      featured: true,
+      highlights: ["Responsive", "full-scale", "Modern"] 
+    },
+    {
+      id: 2,
       title: "Hotel Booking Demo",
       description: "UI for a basic hotel booking app with filter and data fetched by using API made using React",
       image: "project_booking.png",
