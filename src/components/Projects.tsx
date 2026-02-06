@@ -21,7 +21,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Hotel Booking Demo",
+      title: "Hotel Booking UI",
       description: "UI for a basic hotel booking app with filter and data fetched by using API made using React",
       image: "project_booking.png",
       tech: ["React", "javascript", "MUI"],
