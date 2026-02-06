@@ -9,7 +9,7 @@ const Projects = () => {
     {
       id: 1,
       title: "Feedback Dashboard",
-      description: "UI for a basic hotel booking app with filter and data fetched by using API made using React",
+      description: "UI to give feedback to the employees from the manager End to end POC",
       image: "feedbackDashboard.png",
       tech: ["React", "javascript", "MUI", "Python", "Flask", "MongoDB", "Render"],
       githubUrl: "https://github.com/Rithik-gokul/feedback",
